@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+$font: 'Roboto', sans-serif;
+
+// Font Family
+// $font: "font-family: 'Lato', sans-serif";
+// $font: 'Poppins', sans-serif;
+// $font: 'Montserrat', sans-serif;
+// $font: 'Roboto', sans-serif;
+//Color
+$navlink-color: #141212;
+$hover-color: #efb001;
+$font-color: #333333;
+$white: white;
+$black: black;
+$navbar-brand-color: #7D5BF4;
+$nav-link-color: black;
+$introduction-h3-color: black;
+$introduction-button-color: #7D5BF4;
+$introduction-button-hire-text-color: white;
+$introduction-button-hire-hover-text-color: black;
+$description-button-color: #7D5BF4;
+$get-update-background: #835DF6;
+$home-banner-title: #565655;
+$home-banner-para: #515151;
+$home-banner-shadow: #f0f0f0;
+$section-title-color: #141212;
+$subscription-name-color: #1d1d1d;
+
+.pl-0{
+  padding-left: 0 !important;
+}

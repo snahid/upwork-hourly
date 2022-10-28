@@ -1,0 +1,375 @@
+body {
+    line-height: 1.8em;
+    background: #ffffff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: $font;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+a:hover,
+a:focus,
+a:visited {
+    text-decoration: none;
+    outline: none;
+}
+.no-padding {
+    padding: 0px !important;
+}
+
+// Pre Header 
+.pre-header{
+    background-color: $black;
+    min-height: 39px;
+    overflow: hidden;
+    .pre-header-inner{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        .pre-header-left{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            a{
+                font-size: 14px;
+                text-decoration: none;
+                color: $white;
+                border-right: 1px solid rgba(255,255,255,0.4);
+                padding: 5px 15px;
+                transition: 0.3s;
+                text-align: center;
+                &:first-child{
+                    border-left: 1px solid rgba(255,255,255,0.4);
+                }
+                i{
+                    text-align: center;
+                }
+                &:hover{
+                    color: $hover-color;
+                }
+            }
+        }
+        .pre-header-right{
+            a{
+                color: $white;
+                padding: 5px 15px;
+                transition: 0.3s;
+                font-size: 14px;
+                &:hover{
+                    color: $hover-color;
+                }
+                &:last-child{
+                    padding-right: 0;
+                }
+            }
+            .pre-header-login{
+                position: relative;
+                &::after{
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    content: "";
+                    transform: translateY(-50%);
+                    background-color: rgba(255,255,255,0.4);
+                    width: 1px;
+                    height: 15px;
+                }
+            }
+        }
+    }
+}
+// Pre Header 
+
+// Main Header 
+.main-header{
+    .main-header-inner{
+        .navbar{
+            .navbar-brand{
+                img{
+                    max-width: 214px;
+                    min-width: 200px;
+                }
+            }
+            .collapse{
+                flex-grow: 0;
+                .navbar-nav{
+                    .nav-item{
+                        .nav-link{
+                            color: $nav-link-color;
+                            transition: 0.3s;
+                            font-weight: 500;
+                            text-transform: uppercase;
+                            padding: 8px 15px;
+                            &:hover{
+                                color: $hover-color;
+                            }
+                        }
+                        .active{
+                            color: $hover-color;
+                        }
+                        &:last-child{
+                            a{
+                                padding-right: 0;
+                                position: relative;
+                                span{
+                                    position: absolute;
+                                    right: -15px;
+                                    top: 0;
+                                    background-color: $hover-color;
+                                    color: $white;
+                                    min-width: 20px;
+                                    text-align: center;
+                                    font-size: 14px;
+                                    border-radius: 12px;
+                                    padding: 3px;
+                                    line-height: 1em;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// Main Header 
+
+// Home page banner 
+.home-banner-section{
+    .home-banner{
+        .carousel-indicators{
+            bottom: 90px;
+            button{
+                width: 13px;
+                height: 13px;
+                border-radius: 50%;
+                background-color: $white;
+                opacity: 1;
+            }
+            .active{
+                background-color: $hover-color;
+            }
+        }
+        .carousel-control-prev{
+            width: 7%;
+            opacity: 1;
+            i{
+                color: $white;
+                font-size: 30px;
+            }
+        }
+        .carousel-control-next{
+            width: 7%;
+            opacity: 1;
+            i{
+                color: $white;
+                font-size: 30px;
+            }
+        }
+        .carousel-item{
+            position: relative;
+        }
+        .carousel-caption{
+            position: unset;
+        }
+            .banner-content{
+                flex-direction: column;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(240, 240, 240, 0.1);
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+                text-align: center;
+                h1{
+                    font-size: 40px;
+                    text-transform: uppercase;
+                    color: $home-banner-title;
+                    font-weight: 500;
+                    margin-bottom: 10px;
+                }
+                h5{
+                    color: $hover-color;
+                    font-size: 18px;
+                    font-weight: 500;
+                    letter-spacing: 1px;
+                    margin-bottom: 10px;
+                }
+                p{
+                    color: $home-banner-para;
+                    font-weight: 400;
+                    line-height: 20px;
+                    margin-bottom: 20px;
+                }
+                a{
+                    text-align: center;
+                    text-transform: uppercase;
+                    color: $white;
+                    background-color: $hover-color;
+                    border-radius: 3px;
+                    padding: 15px 27px;
+                    transition: 0.3s;
+                    &:hover{
+                        background-color: $home-banner-title;
+                    }
+                }
+            }
+    }
+}
+// Home page banner 
+
+// Home Subscription 
+.home-subscription{
+    margin-top: 50px;
+    margin-bottom: 100px;
+    .title{
+        h1{
+            position: relative;
+            text-align: center;
+            text-transform: uppercase;
+            color: $section-title-color;
+            font-weight: 500;
+            font-size: 28px;
+            margin-bottom: 40px;
+            &::after{
+                position: absolute;
+                transform: translateX(-50%);
+                left: 50%;
+                bottom: -30px;
+                width: 50px;
+                height: 1px;
+                background-color: $section-title-color;
+                content: "";
+            }
+        }
+    }
+    .subscription-box{
+        text-align: center;
+        .top-img{
+            img{
+                // width: 100%;
+            }
+            h5{
+                color: $subscription-name-color;
+                text-transform: uppercase;
+                font-size: 16px;
+                font-weight: 500;
+                margin-bottom: 4px;
+            }
+            p{
+                font-size: 14px;
+                color: $subscription-name-color;
+                margin-bottom: 10px;
+                line-height: 22px;
+            }
+            h2{
+                font-size: 27px;
+                font-weight: 500;
+                color: $subscription-name-color;
+            }
+            .add-to-cart{
+                margin-top: 25px;
+                a{
+                    text-align: center;
+                    text-transform: uppercase;
+                    color: $white;
+                    background-color: $hover-color;
+                    border-radius: 3px;
+                    padding: 15px 27px;
+                    transition: 0.3s;
+                    &:hover{
+                        background-color: $home-banner-title;
+                    }
+                }
+            }
+        }
+    }
+    .second-box{
+        .top-img{
+            padding-top: 59px;
+        }
+    }
+    .third-box{
+        .top-img{
+            padding-top: 96px;
+        }
+    }
+}
+// Home Subscription 
+
+
+
+
+// Search Modal 
+#SearchModal{
+    background-color: rgba(0, 0, 0, 0.5);
+    .modal-dialog{
+        .modal-content{
+            background-color: transparent;
+            border: none;
+            .modal-body{
+                form{
+                    border-bottom: 1px solid $white;
+                    padding-bottom: 5px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    input{
+                        width: 85%;
+                        background-color: transparent;
+                        box-shadow: none;
+                        border: none;
+                        color: $white;
+                        font-size: 19px;
+                        &:focus{
+                            outline: none;
+                            border: none;
+                            box-shadow: none;
+                        }
+                    }
+                    ::-webkit-input-placeholder {
+                        color: rgba(255,255,255,0.5);
+                      }
+                      
+                      :-ms-input-placeholder { 
+                        color: rgba(255,255,255,0.5);
+                      }
+                      
+                      ::placeholder {
+                        color: rgba(255,255,255,0.5);
+                      }
+                      .search-submit{
+                        font-size: 22px;
+                        color: $white;
+                        transition: 0.3s;
+                        &:hover{
+                            color: $hover-color;
+                        }
+                        &:focus{
+                            outline: none;
+                            border: none;
+                            box-shadow: none;
+                            color: $hover-color;
+                        }
+                      }
+                }
+            }
+        }
+    }
+}
+// Search Modal 

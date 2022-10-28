@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
+.pl-0 {
+  padding-left: 0 !important;
+}
+
+body {
+  line-height: 1.8em;
+  background: #ffffff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #FFFFFF;
+}
+
+a:hover,
+a:focus,
+a:visited {
+  text-decoration: none;
+  outline: none;
+}
+
+.no-padding {
+  padding: 0px !important;
+}
+
+.pre-header {
+  background-color: black;
+  min-height: 39px;
+  overflow: hidden;
+}
+.pre-header .pre-header-inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.pre-header .pre-header-inner .pre-header-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.pre-header .pre-header-inner .pre-header-left a {
+  font-size: 14px;
+  text-decoration: none;
+  color: white;
+  border-right: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 5px 15px;
+  transition: 0.3s;
+  text-align: center;
+}
+.pre-header .pre-header-inner .pre-header-left a:first-child {
+  border-left: 1px solid rgba(255, 255, 255, 0.4);
+}
+.pre-header .pre-header-inner .pre-header-left a i {
+  text-align: center;
+}
+.pre-header .pre-header-inner .pre-header-left a:hover {
+  color: #efb001;
+}
+.pre-header .pre-header-inner .pre-header-right a {
+  color: white;
+  padding: 5px 15px;
+  transition: 0.3s;
+  font-size: 14px;
+}
+.pre-header .pre-header-inner .pre-header-right a:hover {
+  color: #efb001;
+}
+.pre-header .pre-header-inner .pre-header-right a:last-child {
+  padding-right: 0;
+}
+.pre-header .pre-header-inner .pre-header-right .pre-header-login {
+  position: relative;
+}
+.pre-header .pre-header-inner .pre-header-right .pre-header-login::after {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  content: "";
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 1px;
+  height: 15px;
+}
+
+.main-header .main-header-inner .navbar .navbar-brand img {
+  max-width: 214px;
+  min-width: 200px;
+}
+.main-header .main-header-inner .navbar .collapse {
+  flex-grow: 0;
+}
+.main-header .main-header-inner .navbar .collapse .navbar-nav .nav-item .nav-link {
+  color: black;
+  transition: 0.3s;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 8px 15px;
+}
+.main-header .main-header-inner .navbar .collapse .navbar-nav .nav-item .nav-link:hover {
+  color: #efb001;
+}
+.main-header .main-header-inner .navbar .collapse .navbar-nav .nav-item .active {
+  color: #efb001;
+}
+.main-header .main-header-inner .navbar .collapse .navbar-nav .nav-item:last-child a {
+  padding-right: 0;
+  position: relative;
+}
+.main-header .main-header-inner .navbar .collapse .navbar-nav .nav-item:last-child a span {
+  position: absolute;
+  right: -15px;
+  top: 0;
+  background-color: #efb001;
+  color: white;
+  min-width: 20px;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 12px;
+  padding: 3px;
+  line-height: 1em;
+}
+
+.home-banner-section .home-banner .carousel-indicators {
+  bottom: 90px;
+}
+.home-banner-section .home-banner .carousel-indicators button {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 1;
+}
+.home-banner-section .home-banner .carousel-indicators .active {
+  background-color: #efb001;
+}
+.home-banner-section .home-banner .carousel-control-prev {
+  width: 7%;
+  opacity: 1;
+}
+.home-banner-section .home-banner .carousel-control-prev i {
+  color: white;
+  font-size: 30px;
+}
+.home-banner-section .home-banner .carousel-control-next {
+  width: 7%;
+  opacity: 1;
+}
+.home-banner-section .home-banner .carousel-control-next i {
+  color: white;
+  font-size: 30px;
+}
+.home-banner-section .home-banner .carousel-item {
+  position: relative;
+}
+.home-banner-section .home-banner .carousel-caption {
+  position: unset;
+}
+.home-banner-section .home-banner .banner-content {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(240, 240, 240, 0.1);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.home-banner-section .home-banner .banner-content h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #565655;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.home-banner-section .home-banner .banner-content h5 {
+  color: #efb001;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.home-banner-section .home-banner .banner-content p {
+  color: #515151;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+.home-banner-section .home-banner .banner-content a {
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  background-color: #efb001;
+  border-radius: 3px;
+  padding: 15px 27px;
+  transition: 0.3s;
+}
+.home-banner-section .home-banner .banner-content a:hover {
+  background-color: #565655;
+}
+
+.home-subscription {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+.home-subscription .title h1 {
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  color: #141212;
+  font-weight: 500;
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+.home-subscription .title h1::after {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  bottom: -30px;
+  width: 50px;
+  height: 1px;
+  background-color: #141212;
+  content: "";
+}
+.home-subscription .subscription-box {
+  text-align: center;
+}
+.home-subscription .subscription-box .top-img h5 {
+  color: #1d1d1d;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+.home-subscription .subscription-box .top-img p {
+  font-size: 14px;
+  color: #1d1d1d;
+  margin-bottom: 10px;
+  line-height: 22px;
+}
+.home-subscription .subscription-box .top-img h2 {
+  font-size: 27px;
+  font-weight: 500;
+  color: #1d1d1d;
+}
+.home-subscription .subscription-box .top-img .add-to-cart {
+  margin-top: 25px;
+}
+.home-subscription .subscription-box .top-img .add-to-cart a {
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  background-color: #efb001;
+  border-radius: 3px;
+  padding: 15px 27px;
+  transition: 0.3s;
+}
+.home-subscription .subscription-box .top-img .add-to-cart a:hover {
+  background-color: #565655;
+}
+.home-subscription .second-box .top-img {
+  padding-top: 59px;
+}
+.home-subscription .third-box .top-img {
+  padding-top: 96px;
+}
+
+#SearchModal {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#SearchModal .modal-dialog .modal-content {
+  background-color: transparent;
+  border: none;
+}
+#SearchModal .modal-dialog .modal-content .modal-body form {
+  border-bottom: 1px solid white;
+  padding-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#SearchModal .modal-dialog .modal-content .modal-body form input {
+  width: 85%;
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+  color: white;
+  font-size: 19px;
+}
+#SearchModal .modal-dialog .modal-content .modal-body form input:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+#SearchModal .modal-dialog .modal-content .modal-body form ::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+#SearchModal .modal-dialog .modal-content .modal-body form :-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+#SearchModal .modal-dialog .modal-content .modal-body form ::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+#SearchModal .modal-dialog .modal-content .modal-body form .search-submit {
+  font-size: 22px;
+  color: white;
+  transition: 0.3s;
+}
+#SearchModal .modal-dialog .modal-content .modal-body form .search-submit:hover {
+  color: #efb001;
+}
+#SearchModal .modal-dialog .modal-content .modal-body form .search-submit:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+  color: #efb001;
+}
+
+/*# sourceMappingURL=style.css.map */
