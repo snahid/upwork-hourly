@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
 .pl-0 {
   padding-left: 0 !important;
 }
@@ -14,7 +14,6 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
-  font-family: "Roboto", sans-serif;
 }
 
 a {
@@ -73,6 +72,8 @@ a:visited {
   padding: 5px 15px;
   transition: 0.3s;
   font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
 }
 .pre-header .pre-header-inner .pre-header-right a:hover {
   color: #efb001;
@@ -94,9 +95,13 @@ a:visited {
   height: 15px;
 }
 
+.main-header {
+  transition: 0.5s ease-in-out;
+}
 .main-header .main-header-inner .navbar .navbar-brand img {
   max-width: 214px;
   min-width: 200px;
+  transition: 0.3s;
 }
 .main-header .main-header-inner .navbar .collapse {
   flex-grow: 0;
@@ -107,6 +112,8 @@ a:visited {
   font-weight: 500;
   text-transform: uppercase;
   padding: 8px 15px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
 }
 .main-header .main-header-inner .navbar .collapse .navbar-nav .nav-item .nav-link:hover {
   color: #efb001;
@@ -132,6 +139,18 @@ a:visited {
   line-height: 1em;
 }
 
+.sticky {
+  padding: 0 0 !important;
+  transition: 0.5s ease-in-out;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 9;
+  -webkit-box-shadow: 0px 10px 13px -7px rgba(0, 0, 0, 0.1), 5px 5px 25px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 13px -7px rgba(0, 0, 0, 0.1), 5px 5px 25px 15px rgba(0, 0, 0, 0.1);
+}
 .home-banner-section .home-banner .carousel-indicators {
   bottom: 90px;
 }
@@ -182,7 +201,8 @@ a:visited {
   text-align: center;
 }
 .home-banner-section .home-banner .banner-content h1 {
-  font-size: 40px;
+  font-family: "Roboto", sans-serif;
+  font-size: 44px;
   text-transform: uppercase;
   color: #565655;
   font-weight: 500;
@@ -191,24 +211,30 @@ a:visited {
 .home-banner-section .home-banner .banner-content h5 {
   color: #efb001;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 1px;
   margin-bottom: 10px;
+  font-family: "Raleway", sans-serif;
 }
 .home-banner-section .home-banner .banner-content p {
   color: #515151;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 20px;
   margin-bottom: 20px;
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
 }
 .home-banner-section .home-banner .banner-content a {
+  font-family: "Roboto", sans-serif;
   text-align: center;
   text-transform: uppercase;
   color: white;
   background-color: #efb001;
   border-radius: 3px;
-  padding: 15px 27px;
+  padding: 15px 38px;
   transition: 0.3s;
+  font-weight: bold;
+  font-size: 14px;
 }
 .home-banner-section .home-banner .banner-content a:hover {
   background-color: #565655;
@@ -219,6 +245,7 @@ a:visited {
   margin-bottom: 100px;
 }
 .home-subscription .title h1 {
+  font-family: "Roboto", sans-serif;
   position: relative;
   text-align: center;
   text-transform: uppercase;
@@ -244,30 +271,37 @@ a:visited {
   color: #1d1d1d;
   text-transform: uppercase;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 4px;
+  font-family: "Raleway", sans-serif;
 }
 .home-subscription .subscription-box .top-img p {
   font-size: 14px;
   color: #1d1d1d;
   margin-bottom: 10px;
   line-height: 22px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
 }
 .home-subscription .subscription-box .top-img h2 {
-  font-size: 27px;
+  font-size: 30px;
   font-weight: 500;
   color: #1d1d1d;
+  font-family: "Roboto", sans-serif;
 }
 .home-subscription .subscription-box .top-img .add-to-cart {
   margin-top: 25px;
 }
 .home-subscription .subscription-box .top-img .add-to-cart a {
+  font-weight: bold;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
   text-align: center;
   text-transform: uppercase;
   color: white;
   background-color: #efb001;
   border-radius: 3px;
-  padding: 15px 27px;
+  padding: 15px 25px;
   transition: 0.3s;
 }
 .home-subscription .subscription-box .top-img .add-to-cart a:hover {
@@ -278,6 +312,299 @@ a:visited {
 }
 .home-subscription .third-box .top-img {
   padding-top: 96px;
+}
+
+.new-arrivals-wrapper {
+  margin-bottom: 100px;
+  background-color: #fbfbfb;
+  padding: 50px 0;
+}
+.new-arrivals-wrapper .new-arrival-inner .title h1 {
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  color: #141212;
+  font-weight: 500;
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+.new-arrivals-wrapper .new-arrival-inner .title h1::after {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  bottom: -30px;
+  width: 50px;
+  height: 1px;
+  background-color: #141212;
+  content: "";
+}
+.new-arrivals-wrapper .new-arrival-inner .new-arrival-slider-wrapper {
+  padding-top: 50px;
+  position: relative;
+}
+.new-arrivals-wrapper .new-arrival-inner .new-arrival-slider-wrapper .item {
+  padding: 20px;
+  text-align: center;
+  background-color: white;
+  border: 1px solid #dddddd;
+}
+.new-arrivals-wrapper .new-arrival-inner .new-arrival-slider-wrapper .item .details h5 {
+  font-family: "Raleway", sans-serif;
+  color: #1d1d1d;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.new-arrivals-wrapper .new-arrival-inner .new-arrival-slider-wrapper .item .details .star {
+  margin-bottom: 5px;
+}
+.new-arrivals-wrapper .new-arrival-inner .new-arrival-slider-wrapper .item .details .star i {
+  color: #efb001;
+}
+.new-arrivals-wrapper .new-arrival-inner .new-arrival-slider-wrapper .item .details h6 {
+  font-family: "Roboto", sans-serif;
+  color: #1d1d1d;
+  font-size: 16px;
+  font-weight: 500;
+}
+.new-arrivals-wrapper .new-arrival-inner .new-arrival-slider-wrapper .owl-prev {
+  position: absolute;
+  right: 50px;
+  top: -50px;
+  border: 1px solid #dddddd;
+  color: #efb001;
+  font-weight: normal;
+  padding: 0 10px 0 10px !important;
+  margin: 0;
+  border-radius: 0;
+  transition: 0.3s;
+}
+.new-arrivals-wrapper .new-arrival-inner .new-arrival-slider-wrapper .owl-prev:hover {
+  background-color: #565655;
+  color: white;
+}
+.new-arrivals-wrapper .new-arrival-inner .new-arrival-slider-wrapper .owl-next {
+  margin: 0;
+  font-weight: normal;
+  border: 1px solid #dddddd;
+  position: absolute;
+  right: 0;
+  top: -50px;
+  color: #efb001;
+  font-weight: normal;
+  padding: 0 10px 0 10px !important;
+  border-radius: 0;
+  transition: 0.3s;
+}
+.new-arrivals-wrapper .new-arrival-inner .new-arrival-slider-wrapper .owl-next:hover {
+  background-color: #565655;
+  color: white;
+}
+.new-arrivals-wrapper .new-arrival-inner .new-arrival-slider-wrapper .view-more-btn {
+  text-align: center;
+  margin-top: 50px;
+}
+.new-arrivals-wrapper .new-arrival-inner .new-arrival-slider-wrapper .view-more-btn a {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  background-color: #efb001;
+  border-radius: 3px;
+  padding: 20px 50px;
+  transition: 0.3s;
+  font-size: 14px;
+  font-weight: bold;
+}
+.new-arrivals-wrapper .new-arrival-inner .new-arrival-slider-wrapper .view-more-btn a:hover {
+  background-color: #565655;
+}
+
+.latest-blog {
+  padding-bottom: 100px;
+  padding-top: 50px;
+  background-color: #f4f4f4;
+}
+.latest-blog .title h1 {
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  color: #141212;
+  font-weight: 500;
+  font-size: 28px;
+  margin-bottom: 50px;
+}
+.latest-blog .title h1::after {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  bottom: -30px;
+  width: 50px;
+  height: 1px;
+  background-color: #141212;
+  content: "";
+}
+.latest-blog .blog-margin {
+  margin-bottom: 15px;
+}
+.latest-blog a {
+  display: block;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+  padding: 20px 15px;
+  position: relative;
+}
+.latest-blog a:hover {
+  -webkit-box-shadow: 0px 10px 13px -7px rgba(0, 0, 0, 0.05), 5px 5px 25px 15px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 10px 13px -7px rgba(0, 0, 0, 0.05), 5px 5px 25px 15px rgba(0, 0, 0, 0.05);
+}
+.latest-blog a:hover .blog-img img {
+  transform: scale(1.3);
+}
+.latest-blog a .blog-box {
+  overflow: hidden;
+}
+.latest-blog a .blog-box .blog-img {
+  overflow: hidden;
+}
+.latest-blog a .blog-box .blog-img img {
+  width: 100%;
+  transition: 1s ease-in-out;
+}
+.latest-blog a .blog-box h5 {
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  color: #1d1d1d;
+  margin-top: 18px;
+}
+.latest-blog a .blog-box p {
+  color: #1d1d1d;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  line-height: 22px;
+  margin-bottom: 0;
+}
+.latest-blog a .blog-box .date {
+  background-color: #686868;
+  width: 80px;
+  height: 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 15px;
+  top: 20px;
+}
+.latest-blog a .blog-box .date p {
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 0;
+}
+
+.client-testimonial {
+  background-image: url(../../assets/Home/testimonial-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  min-height: 500px;
+  margin-bottom: 200px;
+  z-index: 1;
+}
+.client-testimonial::after {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.client-testimonial .client-testimonial-slider-wrapper {
+  padding-top: 50px;
+}
+.client-testimonial .client-testimonial-slider-wrapper .title h1 {
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 500;
+  font-size: 28px;
+  margin-bottom: 50px;
+}
+.client-testimonial .client-testimonial-slider-wrapper .title h1::after {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  bottom: -30px;
+  width: 50px;
+  height: 1px;
+  background-color: white;
+  content: "";
+}
+.client-testimonial .client-testimonial-slider-wrapper .client-slider .item .client-description {
+  padding-top: 20px;
+}
+.client-testimonial .client-testimonial-slider-wrapper .client-slider .item .client-description .client-say {
+  text-align: center;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+}
+.client-testimonial .client-testimonial-slider-wrapper .client-slider .item .client-description .image-designation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.client-testimonial .client-testimonial-slider-wrapper .client-slider .item .client-description .image-designation .client-img {
+  margin-right: 15px;
+}
+.client-testimonial .client-testimonial-slider-wrapper .client-slider .item .client-description .image-designation .client-img img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.client-testimonial .client-testimonial-slider-wrapper .client-slider .item .client-description .image-designation .designation h6 {
+  margin-bottom: 0;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.client-testimonial .client-testimonial-slider-wrapper .client-slider .item .client-description .image-designation .designation p {
+  margin-bottom: 0;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+.client-testimonial .client-testimonial-slider-wrapper .client-slider .owl-dots {
+  position: absolute;
+  left: 0;
+  bottom: -100px;
+  width: 100%;
+}
+.client-testimonial .client-testimonial-slider-wrapper .client-slider .owl-dots .owl-dot span {
+  width: 13px;
+  height: 13px;
+  background-color: white;
+  opacity: 1;
+  margin: 0 3px;
+}
+.client-testimonial .client-testimonial-slider-wrapper .client-slider .owl-dots .active span {
+  background-color: #efb001;
 }
 
 #SearchModal {

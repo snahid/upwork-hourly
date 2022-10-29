@@ -189,43 +189,71 @@
 
 
 // Header Sticky 
-// $(window).scroll(function() {
-//     var scroll = $(window).scrollTop();
-//     if (scroll >= 1) {
-//         $(".header").addClass("sticky");
-//     } else {
-//         $(".header").removeClass("sticky");
-//     }
-// });
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    if (scroll >= 1) {
+        $(".main-header").addClass("sticky");
+    } else {
+        $(".main-header").removeClass("sticky");
+    }
+});
 // Header Sticky 
 
 // Home Page Banner 
 var prevIcon = '<i class="fa fa-chevron-left" aria-hidden="true"></i>';
 var nextIcon = '<i class="fa fa-chevron-right" aria-hidden="true"></i>';
-// $('.home-banner').owlCarousel({
-//     loop: true,
-//     margin: 10,
-//     autoplay: true,
-//     lazyLoad: true,
-//     autoplayHoverPause: true,
-//     // animateOut: 'fadeOut',
-//     navText: [
-//         prevIcon,
-//         nextIcon
-//     ],
-//     nav: true,
-//     responsive: {
-//         0: {
-//             items: 1
-//         },
-//         600: {
-//             items: 1
-//         },
-//         1000: {
-//             items: 1
-//         }
-//     }
-// })
+$('.new-arrival-slider').owlCarousel({
+    loop: true,
+    margin: 30,
+    autoplay: true,
+    lazyLoad: true,
+    autoplayHoverPause: true,
+    slideBy: 1,
+    // animateOut: 'fadeOut',
+    navText: [
+        prevIcon,
+        nextIcon
+    ],
+    nav: true,
+    dots: false,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 1
+        },
+        1000: {
+            items: 4
+        }
+    }
+})
+$('.client-slider').owlCarousel({
+    loop: true,
+    margin: 10,
+    autoplay: true,
+    lazyLoad: true,
+    autoplayHoverPause: true,
+    slideBy: 1,
+    // animateOut: 'fadeOut',
+    navText: [
+        prevIcon,
+        nextIcon
+    ],
+    nav: false,
+    dots: true,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 1
+        },
+        1000: {
+            items: 1
+        }
+    }
+})
 // Home Page Banner 
 
 
